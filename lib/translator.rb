@@ -23,11 +23,16 @@ end
 
 def get_english_meaning(file, j_emoticon)
   emoticons = load_library(file)
+  
+eng_meaning = ''
 
 emoticons.each do |translation, emojis|
+  if j_emoticon = emojis[:japanese]
+    eng_meaning = translation
   binding.pry
 end
-  
+end
+  eng_meaning
 end
 
 def get_japanese_emoticon(file, e_emoticon)
