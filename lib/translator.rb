@@ -38,6 +38,7 @@ if eng_meaning == nil
 else 
   result = eng_meaning
 end
+result
 end
 
 def get_japanese_emoticon(file, e_emoticon)
