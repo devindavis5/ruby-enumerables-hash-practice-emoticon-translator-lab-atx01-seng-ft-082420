@@ -25,6 +25,7 @@ def get_english_meaning(file, j_emoticon)
   emoticons = load_library(file)
   
 eng_meaning = ''
+result = ''
 
 emoticons.each do |translation, emojis|
   if j_emoticon == emojis[:japanese]
@@ -32,7 +33,11 @@ emoticons.each do |translation, emojis|
   #binding.pry
 end
 end
-  eng_meaning
+if eng_meaning == nil
+  result = 'Sorry, that emoticon was not found'
+else 
+  result = eng_meaning
+end
 end
 
 def get_japanese_emoticon(file, e_emoticon)
