@@ -18,6 +18,7 @@ final results = library.each_with_object({}) do |(translation, emojis), emoticon
 binding.pry
 end
 end
+binding.pry
 end
 
 
