@@ -6,8 +6,11 @@ def load_library(yaml_file)
   
 final results = library.each_with_object({}) do |(translation, emojis), emoticons_hash|
   emojis.each do |emoji|
-    binding.pry
-    #if !emoticons_hash[translation]
+    if !emoticons_hash[translation]
+      emoticons_hash[translation] = {}
+    end
+    if !emoticons_hash[translation][:english]
+      emoticons_hash[translation][:english]
 binding.pry
 end
 end
