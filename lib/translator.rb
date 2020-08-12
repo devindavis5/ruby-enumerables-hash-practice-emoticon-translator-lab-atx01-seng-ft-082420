@@ -29,7 +29,7 @@ eng_meaning = ''
 emoticons.each do |translation, emojis|
   if j_emoticon = emojis[:japanese]
     eng_meaning = translation
-  binding.pry
+  #binding.pry
 end
 end
   eng_meaning
