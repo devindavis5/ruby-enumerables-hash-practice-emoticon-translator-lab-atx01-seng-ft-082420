@@ -10,7 +10,11 @@ final results = library.each_with_object({}) do |(translation, emojis), emoticon
       emoticons_hash[translation] = {}
     end
     if !emoticons_hash[translation][:english]
-      emoticons_hash[translation][:english]
+      emoticons_hash[translation][:english] = emotjis[0]
+    end
+      if !emoticons_hash[translation][:japanese]
+        emoticons_hash[translation][:japanese] = emojis[1]
+      end
 binding.pry
 end
 end
