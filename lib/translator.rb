@@ -48,8 +48,8 @@ japanese_emoticon = ''
 result = ''
 
 emoticons.each do |translation, emojis|
-    if e_emoticon = emojis[:english]
-      japanese_emoticon =  emojis[:japanese]
+    if e_emoticon == emojis[:english]
+      japanese_emoticon = emojis[:japanese]
   end 
 end
 
