@@ -11,6 +11,7 @@ final results = library.each_with_object({}) do |(translation, emojis), emoticon
 binding.pry
 end
 end
+end
 
 
 def get_english_meaning(file, j_emoticon)
