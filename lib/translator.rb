@@ -15,10 +15,9 @@ final_results = library.each_with_object({}) do |(translation, emojis), emoticon
       if !emoticons_hash[translation][:japanese]
         emoticons_hash[translation][:japanese] = emojis[1]
       end
-binding.pry
+
 end
 end
-binding.pry
 end
 
 
