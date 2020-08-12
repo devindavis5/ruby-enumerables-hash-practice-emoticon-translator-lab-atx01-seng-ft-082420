@@ -33,7 +33,7 @@ emoticons.each do |translation, emojis|
   #binding.pry
 end
 end
-if eng_meaning == nil
+if eng_meaning == ''
   result = 'Sorry, that emoticon was not found'
 else 
   result = eng_meaning
