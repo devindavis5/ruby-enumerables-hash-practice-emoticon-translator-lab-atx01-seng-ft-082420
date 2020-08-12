@@ -4,7 +4,7 @@ require 'pry'
 def load_library(yaml_file)
   library = YAML.load_file('./lib/emoticons.yml')
   
-final results = library.each_with_object({}) do |(translation, emojis), emoticons_hash|
+final_results = library.each_with_object({}) do |(translation, emojis), emoticons_hash|
   emojis.each do |emoji|
     if !emoticons_hash[translation]
       emoticons_hash[translation] = {}
